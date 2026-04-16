@@ -12,10 +12,10 @@ export default function SplashScreen() {
   Onde a natureza guarda seus pequenos segredos
 </Text>
 
-{/* Espaço para o Logo (conforme o desenho no quadro) */}
-        <View style={styles.logoContainer}>
-          <Text style={styles.logoPlaceholder}>LOGO</Text>
-        </View>
+<Image 
+      source={require('../../assets/images/logo.jpeg')} 
+      style={{ width: 200, height: 200 }} 
+    />
 
       
         {/* Botão de Acessar */}
@@ -30,7 +30,7 @@ export default function SplashScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F9F9F7', // Cor clara baseada nos hexadecimais do quadro
+    backgroundColor: '#F9F9F7', 
     alignItems: 'center',
     justifyContent: 'center',
   },
