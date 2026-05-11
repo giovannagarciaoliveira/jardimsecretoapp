@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableOpacity, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity,} from 'react-native';
 
-export default function SplashScreen() {
+export default function SplashScreen({navigation}) {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <View style={styles.content}>
         {/* Título do Tema */}
         <Text style={styles.title}>Jardim Secreto</Text>
@@ -19,11 +19,11 @@ export default function SplashScreen() {
 
       
         {/* Botão de Acessar */}
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Cadastro")}>
           <Text style={styles.buttonText}>Acessar</Text>
         </TouchableOpacity>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
