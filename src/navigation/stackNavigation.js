@@ -21,7 +21,7 @@ export default function StackNavigation() {
             />
 
             <Stack.Screen
-                name="tabs"
+                name="Tabs"
                 component={TabNavigation}
                 options={{ headerShown: false }}
             />
