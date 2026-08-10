@@ -2,6 +2,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "../telas/HomeScreen";
 import SearchScreen from "../telas/SearchScreen";
 import FavoritesScreen from "../telas/FavoritesScreen";
+import ProductScreen from "../telas/ProductScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -11,6 +12,7 @@ export default function TabNavigation() {
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Pesquisa" component={SearchScreen} />
         <Tab.Screen name="Favoritos" component={FavoritesScreen} />
+        <Tab.Screen name="Produto" component={ProductScreen} />
     </Tab.Navigator>
   );
 }

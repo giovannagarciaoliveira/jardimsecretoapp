@@ -3,6 +3,9 @@ import SplashScreen from "../telas/SplashScreen";
 import TabNavigation from "./tabNavigation";
 import RegisterScreen from "../telas/RegisterScreen";
 import LoginScreen from "../telas/LoginScreen";
+import ProductScreen from "../telas/ProductScreen";
+
+
 
 const Stack = createNativeStackNavigator();
 export default function StackNavigation() {
@@ -30,6 +33,13 @@ export default function StackNavigation() {
                  component={LoginScreen}
                   options={{ headerShown: false }}
                 ></Stack.Screen>
+
+               
+
+            <Stack.Screen 
+            name="Produto"
+            component={ProductScreen}
+/>
 
         </Stack.Navigator>
 
