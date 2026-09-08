@@ -4,6 +4,8 @@ import TabNavigation from "./tabNavigation";
 import RegisterScreen from "../telas/RegisterScreen";
 import LoginScreen from "../telas/LoginScreen";
 import ProductScreen from "../telas/ProductScreen";
+import CartScreen from "../telas/CartScreen";
+
 
 
 
